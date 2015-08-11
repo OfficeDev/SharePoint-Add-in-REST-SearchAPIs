@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="7bcfa3dd-d4eb-4852-b48b-eacbe25a0be8" 
+        solutionId="7bcfa3dd-d4eb-4852-b48b-eacbe25a0be8" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SharePoint_Add_in_REST_SearchAPIs"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="18abbc0d-2bb8-4569-b15d-3a047faa5265" />
+  </features>
+</package>

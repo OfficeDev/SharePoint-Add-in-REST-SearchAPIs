@@ -14,7 +14,7 @@ Use the Search REST\OData endpoint, in a SharePoint Add-in, to programmatically 
 This sample requires the following:
 
 
-- A SharePoint 2013 (or later) development environment that is configured for app isolation and OAuth. (A SharePoint Online Developer Site is automatically configured. For an on premise development environment, see [Set up an on-premises development environment for SharePoint Add-ins](https://msdn.microsoft.com/library/office/fp179923.aspx) and [Use an Office 365 SharePoint site to authorize provider-hosted add-ins on an on-premises SharePoint site](https://msdn.microsoft.com/library/office/dn155905.aspx).) 
+- A SharePoint 2013 (or later) development environment that is configured for app isolation. (A SharePoint Online Developer Site is automatically configured. For an on premise development environment, see [Set up an on-premises development environment for SharePoint Add-ins](https://msdn.microsoft.com/library/office/fp179923.aspx) ) 
 
 
 - Visual Studio and the Office Developer Tools for Visual Studio installed on your developer computer 
@@ -27,7 +27,7 @@ The sample accepts a query using the keyword query language (KQL) syntax as an i
 
 The code that uses the REST\OData endpoint for Search is located in the Add-in.js file of the project. The Default.aspx page of the add-in appears after you install and launch the add-in. When you enter a search term and press Search, the page looks similar to the following.
 
-![The add-in start page with a table showing the result of searching on the term "SharePoint".](/description/fig1.gif) 
+![The add-in start page with a table showing the result of searching on the term "SharePoint".](/description/fig1.jpg) 
 
 
 

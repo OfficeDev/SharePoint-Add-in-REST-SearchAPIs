@@ -14,7 +14,7 @@ Use the Search REST\OData endpoint, in a SharePoint Add-in, to programmatically 
 This sample requires the following:
 
 
-- A SharePoint 2013 (or later) development environment that is configured for app isolation. (A SharePoint Online Developer Site is automatically configured. For an on premise development environment, see [Set up an on-premises development environment for SharePoint Add-ins](https://msdn.microsoft.com/library/office/fp179923.aspx) ) 
+- A SharePoint 2013 (or later) development environment that is configured for add-in isolation. (A SharePoint Online Developer Site is automatically configured. For an on premise development environment, see [Set up an on-premises development environment for SharePoint Add-ins](https://msdn.microsoft.com/library/office/fp179923.aspx) ) 
 
 
 - Visual Studio and the Office Developer Tools for Visual Studio installed on your developer computer 
@@ -46,7 +46,7 @@ The sample demonstrates the following:
 13. Open the .sln file.
 13. In **Solution Explorer**, highlight the SharePoint add-in project and replace the **Site URL** property with the URL of your SharePoint developer site.
 14. Press F5.
-15. After the app installs, the consent page opens. Click **Trust It**.
+15. After the add-in installs, the consent page opens. Click **Trust It**.
 16. Enter a KQL query string in the text box beside the **Search** button and click the button. In a moment, the page refreshes and the returned data is displayed in a table.
 
 
@@ -61,7 +61,7 @@ The sample demonstrates the following:
 </tr>
 <tr valign="top">
 <td><span style="font-size:small">Visual Studio does not open the browser after you press the F5 key.</span></td>
-<td><span style="font-size:small">Set the app for SharePoint project as the startup project.</span></td>
+<td><span style="font-size:small">Set the add-in for SharePoint project as the startup project.</span></td>
 </tr>
 
 </tbody>

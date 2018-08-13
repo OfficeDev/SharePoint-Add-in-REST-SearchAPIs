@@ -1,0 +1,99 @@
+<!--Using the Open Source Library SPServices to progrmmatically search in SharePoint 2010 -->
+<script language="text/javascript" type="text/javascript" src="/Documents/jquery.SPServices.min.js"></script>
+
+<script type="text/javascript" language="javascript">
+
+$(document).ready(function () {
+
+$("#sb").click(function(){
+$("#result").empty();
+var queryText ="";
+var keyval = "";
+ 
+//Build Query from input
+if($("#searchterm").val()){
+
+keyval = $("#searchterm").val();
+
+var queryText = "<QueryPacket xmlns='urn:Microsoft.Search.Query' Revision='1000'>";
+queryText += "<Query>";
+queryText += "<Context>";
+queryText += "<QueryText language='en-US' type='MSSQLFT'>";
+queryText += "SELECT Title, Rank, Description, Path FROM Scope() WHERE freetext(contents, '" + keyval + "') ORDER BY \"Rank\" DESC"
+queryText += "</QueryText>";
+queryText += "</Context>";
+queryText += "<Range><Count>10000</Count></Range>";
+queryText += "</Query>";
+queryText += "</QueryPacket>";
+
+}
+ 
+if(queryText){
+
+sendQuery(queryText);
+
+}
+
+else {
+$("#result").append("Please enter a search term");
+}
+ 
+//If no results found
+
+ //Add to handle
+});
+
+
+});
+
+
+
+function sendQuery(queryText){
+ 
+        $().SPServices({
+            operation: "Query",
+            queryXml: queryText,
+            completefunc: function(xData, Status) {              	
+                $(xData.responseXML).find("QueryResult").each(function() {
+
+ 		var x = $("<xml>" + $(this).text() + "</xml>");           
+          
+                  
+                      x.find("Document").each(function() {
+ 
+                       
+                       var url = $("Action>LinkUrl", $(this)).text() + "";
+                      
+                       var  hurl = "<li><a href='" + url + "' target = '_blank'>" + url + "</a></li></br>";
+
+                      
+ 
+                        $("#result").append(hurl);
+			
+
+                      
+                     });
+                    
+                });
+            }
+        });      
+
+}
+
+</script>
+
+<body>
+ <table><tbody><tr><td align="right">Search SharePoint 2010:</td>
+<td align="left"><input id="searchterm" type="text"/></td></tr>
+<tr><td align="right"></td>
+<td align="left"><input id="sb" type="button" value="Search"/></td></tr>
+
+</tbody></table>
+
+<ul id="result"></ul><br/>
+
+<i></br>**Search may not yield any results if the term is not found </i>
+
+
+</body>
+

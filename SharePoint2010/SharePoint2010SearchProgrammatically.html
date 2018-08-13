@@ -65,11 +65,9 @@ function sendQuery(queryText){
                        var url = $("Action>LinkUrl", $(this)).text() + "";
                       
                        var  hurl = "<li><a href='" + url + "' target = '_blank'>" + url + "</a></li></br>";
-
                       
  
-                        $("#result").append(hurl);
-			
+                        $("#result").append(hurl);			
 
                       
                      });
@@ -92,7 +90,7 @@ function sendQuery(queryText){
 
 <ul id="result"></ul><br/>
 
-<i></br>**Search may not yield any results if the term is not found </i>
+<i>**Search may not yield any results if the term is not found </i>
 
 
 </body>

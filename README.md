@@ -1,3 +1,16 @@
+---
+topic: sample
+products:
+- SharePoint
+- Office 365
+languages:
+- ASP
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 8/11/2015 2:10:00 PM
+---
 # Calling the Search REST\OData endpoint in SharePoint Add-ins #
 
 ## Summary

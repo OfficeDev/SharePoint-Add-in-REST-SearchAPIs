@@ -10,20 +10,25 @@ extensions:
   technologies:
   - Add-ins
   createdDate: 8/11/2015 2:10:00 PM
+description: "Use the Search REST and OData endpoint, in a SharePoint Add-in, to programmatically search content are return the results."
 ---
-# Calling the Search REST\OData endpoint in SharePoint Add-ins #
+
+# Calling the Search REST\OData endpoint in SharePoint Add-ins
 
 ## Summary
+
 Use the Search REST\OData endpoint, in a SharePoint Add-in, to programmatically search content are return the results.
 
-### Applies to ###
+### Applies to
+
 -  SharePoint Online and on-premise SharePoint 2013 and later 
 
-### Provided by ###
+### Provided by
 
 [Scott Hillier](http://www.shillier.com/default.aspx), [Critical Path Training](http://www.criticalpathtraining.com/Pages/default.aspx)
-----------
-## Prerequisites ##
+
+## Prerequisites
+
 This sample requires the following:
 
 
@@ -35,7 +40,8 @@ This sample requires the following:
 
 - Basic familiarity with RESTful web services
 
-## Description of the code ##
+## Description of the code
+
 The sample accepts a query using the keyword query language (KQL) syntax as an input. It subsequently makes a call to the search engine using the SharePoint search REST\OData endpoint. The results are then displayed in a table, which is built dynamically using JQuery and JavaScript. 
 
 The code that uses the REST\OData endpoint for Search is located in the Add-in.js file of the project. The Default.aspx page of the add-in appears after you install and launch the add-in. When you enter a search term and press Search, the page looks similar to the following.
@@ -53,7 +59,7 @@ The sample demonstrates the following:
 
 
 
-## To use the sample #
+## To use the sample
 
 12. Open **Visual Studio** as an administrator.
 13. Open the .sln file.
@@ -61,7 +67,6 @@ The sample demonstrates the following:
 14. Press F5.
 15. After the add-in installs, the consent page opens. Click **Trust It**.
 16. Enter a KQL query string in the text box beside the **Search** button and click the button. In a moment, the page refreshes and the returned data is displayed in a table.
-
 
 ## Troubleshooting
 
@@ -84,7 +89,6 @@ The sample demonstrates the following:
 
 We'd love to get your feedback on this sample. You can send your questions and suggestions to us in the [Issues](https://github.com/OfficeDev/SharePoint_SP-hosted_Add-ins_Tutorials/issues) section of this repository.
   
-<a name="resources"/>
 ## Additional resources
 
 [Get to know the SharePoint 2013 REST service](https://msdn.microsoft.com/library/fp142380.aspx).
@@ -95,13 +99,8 @@ We'd love to get your feedback on this sample. You can send your questions and s
 
 [OData: AtomPub Format](http://www.odata.org/developers/protocols/atom-format).
 
-### Copyright ###
+### Copyright
 
 Copyright (c) Microsoft. All rights reserved.
-
-
-
-
-
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.

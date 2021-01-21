@@ -15,6 +15,8 @@ description: "Use the Search REST and OData endpoint, in a SharePoint Add-in, to
 
 # Calling the Search REST\OData endpoint in SharePoint Add-ins
 
+> SharePoint add-in model is considered as a legacy option for extending SharePoint user interface. Please see [SharePoint Framework documentation](https://aka.ms/spfx) and the [SharePoint Framework samples](https://aka.ms/spfx-webparts) for the future proven option to extend SharePoint Online. Possible backend services should be using Azure Active Directly based registration and related app models.
+
 ## Summary
 
 Use the Search REST\OData endpoint, in a SharePoint Add-in, to programmatically search content are return the results.
